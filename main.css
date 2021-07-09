@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.somu{
+    width: 700px;
+    height: 600px;
+    border: 10 px solid red;
+    background-color: rgb(118, 131, 141);
+}
+#character{
+    width: 30px;
+    height: 50px;
+    background-color: rgb(218, 18, 44);
+    position: relative;
+    top: 550px;
+}
+.animate{
+    animation: jump 500ms infinite;
+}
+#block{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(6, 15, 24);
+    position: relative;
+    left: 680px;
+    top: 530px;
+    animation: block 2.5s infinite;
+}
+@keyframes jump{
+    0%{top: 550px;
+    }
+    30%{top:500px;}
+    70%{top:500px;}
+    100%{top: 550px;}
+}
+@keyframes block{
+    0%{left: 680px;}
+    100%{left: -40px ;}
+}
